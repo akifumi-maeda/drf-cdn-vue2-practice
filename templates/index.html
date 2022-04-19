@@ -45,7 +45,7 @@
 
         <!-- メッセージエリア -->
         <div id="messages">
-            <b-alert variant="danger" show v-show="messsage.error" class="mb-0">
+            <b-alert variant="danger" show v-show="message.error" class="mb-0">
                 ${ message.error }
             </b-alert>
             <b-alert
@@ -58,7 +58,7 @@
                     ${ warning }
                 </p>
             </b-alert>
-            <b-alert variant="info" show v-show="messsage.info" class="m-0">
+            <b-alert variant="info" show v-show="message.info" class="m-0">
                 ${ message.info }
             </b-alert>
         </div>
@@ -188,7 +188,7 @@
                         });
                 },
                 // メッセージをクリア
-                this.clearMessages: function() {
+                clearMessages: function() {
                     this.message.error = "";
                     this.message.warnings = [];
                     this.message.info = "";
