@@ -156,9 +156,9 @@
                             ? "/books/" + this.form.book.id + "/"
                             : "/books/",
                         data: {
-                            id: "this.form.book.id",
-                            title: "this.form.book.title",
-                            price: "this.form.book.price"
+                            id: this.form.book.id,
+                            title: this.form.book.title,
+                            price: this.form.book.price
                         }
                     })
                         .then(response => {
